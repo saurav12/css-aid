@@ -1,0 +1,440 @@
+// ######################################## //
+// ## XTRAS.SCSS ## //
+// ######################################## //
+
+// Flex Justify Content (prefixes)
+$flex-justify-prefixes: (
+  fs : flex-start,
+  fe : flex-end,
+  c  : center,
+  sa : space-around,
+  sb : space-between,
+  ih : inherit,
+  in : initial
+) !default;
+
+// Flex Align Items (prefixes)
+$flex-align-prefixes: (
+  fs : flex-start,
+  fe : flex-end,
+  c  : center,
+  b  : baseline,
+  s  : stretch,
+  ih : inherit,
+  in : initial
+) !default;
+
+// Flex Direction (prefixes)
+$flex-direction-prefixes: (
+  r  : row,
+  rr : row-reverse,
+  c  : column,
+  cr : column-reverse,
+  ih : inherit,
+  in : initial
+) !default;
+
+// Flex Wrap (prefixes)
+$flex-wrap-prefixes: (
+  nw : no-wrap,
+  w  : wrap,
+  wr : wrap-reverse,
+  ih : inherit,
+  in : initial
+) !default;
+
+// Display Table (prefixes)
+$table-prefixes: (
+  tb     : table,
+  tbin   : inline-table,
+  tc     : table-cell,
+  tcap   : table-caption,
+  tr     : table-row,
+  trgr   : table-row-group,
+  tcol   : table-column,
+  tcolgr : table-column-group,
+  thgr   : table-header-group,
+  tfgr   : table-footer-group,
+  ih     : inherit,
+  in     : initial
+) !default;
+
+// Vertical Aligning (prefixes)
+$vertical-align-prefixes: (
+  bl     : baseline,
+  b      : bottom,
+  m      : middle,
+  sub    : sub,
+  sup    : super,
+  tb     : text-bottom,
+  tt     : text-top,
+  t      : top,
+  ih     : inherit,
+  in     : initial,
+) !default;
+
+// Spacing Values (array)
+$space-values : (
+  0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100
+) !default;
+
+// Margin (prefixes)
+$margin-prefixes : (
+  m  : margin,
+  mt : margin-top,
+  mr : margin-right,
+  mb : margin-bottom,
+  ml : margin-left
+) !default;
+
+// Padding (prefixes)
+$padding-prefixes : (
+  p  : padding,
+  pt : padding-top,
+  pr : padding-right,
+  pb : padding-bottom,
+  pl : padding-left
+) !default;
+
+// Social Colors
+$color-facebook    : #3b5999;
+$color-messenger   : #0084ff;
+$color-twitter     : #55acee;
+$color-linkedin    : #0077b5;
+$color-skype       : #00aff0;
+$color-dropbox     : #007ee5;
+$color-wordpress   : #21759b;
+$color-vimeo       : #1ab7ea;
+$color-slideshare  : #0077b5;
+$color-vk          : #4c75a3;
+$color-tumblr      : #34465d;
+$color-yahoo       : #410093;
+$color-gplus       : #db4437;
+$color-pinterest   : #bd081c;
+$color-youtube     : #cd201f;
+$color-stumbleupon : #eb4924;
+$color-reddit      : #ff5700;
+$color-quora       : #b92b27;
+$color-yelp        : #af0606;
+$color-weibo       : #df2029;
+$color-producthunt : #da552f;
+$color-hackernews  : #ff6600;
+$color-soundcloud  : #ff3300;
+$color-blogger     : #f57d00;
+$color-whatsapp    : #4dc247;
+$color-wechat      : #09b83e;
+$color-line        : #00c300;
+$color-medium      : #02b875;
+$color-vine        : #00b489;
+$color-slack       : #3aaf85;
+$color-instagram   : #c21473;
+$color-dribbble    : #ea4c89;
+$color-flickr      : #ff0084;
+$color-foursquare  : #f94877;
+$color-behance     : #1769ff;
+$color-github      : #24292e;
+$color-spotify     : #00e461;
+$color-snapchat    : #fffc00;
+
+// Social Colors (prefixes)
+$social-colors-prefixes : (
+  facebook    : $color-facebook,
+  messenger   : $color-messenger,
+  twitter     : $color-twitter,
+  linkedin    : $color-linkedin,
+  skype       : $color-skype,
+  dropbox     : $color-dropbox,
+  wordpress   : $color-wordpress,
+  vimeo       : $color-vimeo,
+  slideshare  : $color-slideshare,
+  vk          : $color-vk,
+  tumblr      : $color-tumblr,
+  yahoo       : $color-yahoo,
+  gplus       : $color-gplus,
+  pinterest   : $color-pinterest,
+  youtube     : $color-youtube,
+  stumbleupon : $color-stumbleupon,
+  reddit      : $color-reddit,
+  quora       : $color-quora,
+  yelp        : $color-yelp,
+  weibo       : $color-weibo,
+  producthunt : $color-producthunt,
+  hackernews  : $color-hackernews,
+  soundcloud  : $color-soundcloud,
+  blogger     : $color-blogger,
+  whatsapp    : $color-whatsapp,
+  wechat      : $color-wechat,
+  line        : $color-line,
+  medium      : $color-medium,
+  vine        : $color-vine,
+  slack       : $color-slack,
+  instagram   : $color-instagram,
+  dribbble    : $color-dribbble,
+  flickr      : $color-flickr,
+  foursquare  : $color-foursquare,
+  behance     : $color-behance,
+  github      : $color-github,
+  spotify     : $color-spotify,
+  snapchat    : $color-snapchat
+) !default;
+
+
+
+// ********************************* //
+// ************ MARGINS ************ //
+// ********************************* //
+@each $prop-short, $prop-long in $margin-prefixes {
+  @each $value in $space-values {
+    .#{$prop-short}--#{$value} {
+      #{$prop-long}: #{$value}px;
+    }
+  }
+}
+
+
+// ********************************* //
+// ************ PADDINGS *********** //
+// ********************************* //
+@each $prop-short, $prop-long in $padding-prefixes {
+  @each $value in $space-values {
+    .#{$prop-short}--#{$value} {
+      #{$prop-long}: #{$value}px;
+    }
+  }
+}
+
+
+// ********************************* //
+// ************ FLEXBOX ************ //
+// ********************************* //
+
+// Flex
+.fx {
+  display: flex;
+}
+
+// Inline Flex
+.fxin {
+  display: inline-flex;
+}
+
+// Flex Wrap
+@each $prop-short, $prop-long in $flex-wrap-prefixes {
+  .fx--w-#{$prop-short} {
+    flex-wrap: #{$prop-long};
+  }
+}
+
+// Flex Direction
+@each $prop-short, $prop-long in $flex-direction-prefixes {
+  .fx--d-#{$prop-short} {
+    flex-direction: #{$prop-long};
+  }
+}
+
+// Justify Content
+@each $prop-short, $prop-long in $flex-justify-prefixes {
+  .fx--jc-#{$prop-short} {
+    justify-content: #{$prop-long};
+  }
+}
+
+// Align Items
+@each $prop-short, $prop-long in $flex-align-prefixes {
+  .fx--ai-#{$prop-short} {
+    align-items: #{$prop-long};
+  }
+}
+
+
+// ********************************* //
+// ******** TABLE (DISPLAY) ******** //
+// ********************************* //
+@each $prop-short, $prop-long in $table-prefixes {
+  .table--#{$prop-short} {
+    display: #{$prop-long};
+    
+    // Full Width
+    &.fw {
+      width: 100%;
+    }
+  }
+}
+
+
+// ********************************* //
+// ******* TABLE (ALIGNMENT) ******* //
+// ********************************* //
+/* Table */
+.sec--table {
+  display: table;
+
+  // Full Width
+  &.fw {
+    width: 100%;
+  }
+}
+
+/* Table Row */
+.sec--table-row {
+  display: table-row;
+}
+
+/* Table Cell */
+.sec--table-cell {
+  display: table-cell;
+}
+
+
+// ********************************* //
+// ******** VERTICAL ALIGN ********* //
+// ********************************* //
+@each $prop-short, $prop-long in $vertical-align-prefixes {
+  .valign--#{$prop-short} {
+    vertical-align: #{$prop-long};
+  }
+}
+
+
+// ********************************* //
+// ************* WIDTH ************* //
+// ********************************* //
+// Full Width
+.width--full {
+  width: 100%;
+}
+
+// Half Width
+.width--half {
+  width: 50%;
+}
+
+// Auto Width
+.width--auto {
+  width: auto;
+}
+
+
+// ********************************* //
+// ********** WIDTH (vh) *********** //
+// ********************************* //
+// Full Width
+.width--full-vh {
+  width: 100vh;
+}
+
+// Half Width
+.width--half-vh {
+  width: 50vh;
+}
+
+
+// ********************************* //
+// ************* HEIGHT ************ //
+// ********************************* //
+// Full Height
+.height--full {
+  height: 100%;
+}
+
+// Half Height
+.height--half {
+  height: 50%;
+}
+
+// Auto Height
+.height--auto {
+  height: auto;
+}
+
+
+// ********************************* //
+// ********** HEIGHT (vh) ********** //
+// ********************************* //
+// Full Height
+.height--full-vh {
+  height: 100vh;
+}
+
+// Half Height
+.height--half-vh {
+  height: 50vh;
+}
+
+
+// ********************************* //
+// ********* COLORS (SOCIAL) ******* //
+// ********************************* //
+@each $prop-short, $prop-long in $social-colors-prefixes {
+  .social--color-#{$prop-short} {
+    color: #{$prop-long};
+  }
+}
+
+
+// ********************************* //
+// ***** BACKGROUNDS (SOCIAL) ****** //
+// ********************************* //
+@each $prop-short, $prop-long in $social-colors-prefixes {
+  .social--bg-#{$prop-short} {
+    background-color: #{$prop-long};
+  }
+}
+
+
+
+// ********************************* //
+// ******* BUTTONS (SOCIAL) ******** //
+// ********************************* //
+@each $prop-short, $prop-long in $social-colors-prefixes {
+  .social--btn-#{$prop-short} {
+    background-color: #{$prop-long};
+    color: #ffffff;
+    transition: all .1s linear;
+
+    &:hover {
+      opacity: 0.8;
+      color: #ffffff;
+      transition: all .1s linear;
+    }
+
+    &:focus,
+    &:active {
+      background-color: #{$prop-long};
+      color: #ffffff;
+    }
+  }
+}
+
+
+// ********************************* //
+// ********** TEXT STYLES ********** //
+// ********************************* //
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-white {
+  // color: $white;
+}
+
+.text-red {
+  // color: $material-red;
+}
+
+.text-yellow {
+  // color: $material-yellow-dark;
+}
+
+.text-green {
+  // color: $material-green;
+}
+
+
+
+// ********************************* //
+// ************ CURSORS ************ //
+// ********************************* //
+.cursor_pointer {
+  cursor: pointer;
+}

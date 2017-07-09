@@ -1,0 +1,82 @@
+// ######################################## //
+// ## INTERNAL.SCSS ## //
+// ######################################## //
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,500,600,700');
+
+body {
+	font-family: Nunito;
+	background: $theme-primary;
+	color: $theme-primary-bg;
+	padding: 0 20px;
+}
+
+.hero-sec {
+
+	h1 {
+		font-family: Nunito;
+		font-size: 9rem;
+		font-weight: 900;
+		display: flex;
+		justify-content: center;
+		transition: all .15s ease-in-out;
+
+		&:hover {
+			transition: all .15s ease-in-out;
+			
+			.boxed {
+				background: $theme-primary;
+				color: $theme-primary-bg;
+			}
+
+			.unboxed {
+				background: $theme-primary-bg;
+				color: $theme-primary;
+			}
+		}
+
+		// On Mobiles
+		@media screen and (max-width: 767px) {
+			font-size: 5rem;
+		}
+
+		.boxed {
+			background: $theme-primary-bg;
+			color: $theme-primary;
+			border-radius: 100px 0 0 100px;
+			border: 8px solid $theme-primary-bg;
+			padding: 12px 14px 6px 30px;
+			transition: all .15s ease-in-out;
+
+			// On Mobiles
+			@media screen and (max-width: 767px) {
+				padding: 6px 0px 3px 15px;
+			}
+		}
+
+		.unboxed {
+			border-radius: 0 100px 100px 0;
+			border: 8px solid $theme-primary-bg;
+			padding: 12px 34px 6px 20px;
+			transition: all .15s ease-in-out;
+
+			// On Mobiles
+			@media screen and (max-width: 767px) {
+				padding: 6px 20px 3px 15px;
+			}
+		}
+	}
+
+	.lead {
+		font-size: 3rem;
+		font-weight: 300;
+		margin-top: 30px;
+
+		// On Mobiles
+		@media screen and (max-width: 767px) {
+			font-size: 2.5rem;
+			margin-top: 20px;
+		}
+	}
+}
