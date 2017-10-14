@@ -8,18 +8,20 @@
 body {
 	font-family: Nunito;
 	background: $theme-primary;
-	color: $theme-primary-bg;
+	color: $white;
 	padding: 0 20px;
 }
 
 .hero-sec {
+	padding: 6rem 0;
 
 	h1 {
 		font-family: Nunito;
 		font-size: 9rem;
 		font-weight: 900;
-		display: flex;
+		display: inline-flex;
 		justify-content: center;
+		cursor: default;
 		transition: all .15s ease-in-out;
 
 		&:hover {
@@ -27,11 +29,11 @@ body {
 			
 			.boxed {
 				background: $theme-primary;
-				color: $theme-primary-bg;
+				color: $white;
 			}
 
 			.unboxed {
-				background: $theme-primary-bg;
+				background: $white;
 				color: $theme-primary;
 			}
 		}
@@ -42,10 +44,10 @@ body {
 		}
 
 		.boxed {
-			background: $theme-primary-bg;
+			background: $white;
 			color: $theme-primary;
 			border-radius: 100px 0 0 100px;
-			border: 8px solid $theme-primary-bg;
+			border: 8px solid $white;
 			padding: 12px 14px 6px 30px;
 			transition: all .15s ease-in-out;
 
@@ -57,7 +59,7 @@ body {
 
 		.unboxed {
 			border-radius: 0 100px 100px 0;
-			border: 8px solid $theme-primary-bg;
+			border: 8px solid $white;
 			padding: 12px 34px 6px 20px;
 			transition: all .15s ease-in-out;
 
@@ -79,4 +81,78 @@ body {
 			margin-top: 20px;
 		}
 	}
+
+	.btn {
+
+		&:hover { color: #ffffff; }
+	}
+}
+
+
+// Description Section
+.desc--sec {
+	font-family: 'Zilla Slab';
+
+	// Contaier
+	.container {
+		width: 100%;
+		max-width: 900px;
+	}
+
+	// Description Section Header
+	.desc--sec-header {
+		margin-bottom: 20px;
+
+		// Title
+		.desc--sec-title {
+			font-size: 34px;
+			margin-bottom: 0;
+		}
+
+		// Subtitle
+		.desc--sec-subtitle {
+			font-size: 20px;
+			font-weight: 300;
+			margin: 5px 0 0 0;
+		}
+	}
+
+	// Panel
+	.panel {
+		background: #fff;
+		border-radius: 6px;
+		padding: 20px 30px;
+		color: #767676;
+		box-shadow: 0 1px 2px rgba(#000, 0.1);
+
+		// Panel Heading
+		.panel-heading {
+			padding: 0;
+			margin-bottom: 15px;
+		}
+
+		// Panel Title
+		.panel-title {
+			font-size: 30px;
+			font-weight: 600;
+		}
+
+		// Panel Body
+		.panel-body {
+			padding: 0;
+		}
+	}
+
+	// Heading
+	p {
+		font-size: 20px;
+	}
+}
+
+
+// Code
+code {
+	font-size: 75%;
+	background-color: $theme-primary-bg;
+	color: $theme-primary;
 }

@@ -96,6 +96,44 @@ $padding-prefixes : (
   pl : padding-left
 ) !default;
 
+// Cursor (prefixes)
+$cursor-prefixes : (
+  alias       : alias,
+  allscroll   : all-scroll,
+  auto        : auto,
+  cell        : cell,
+  colresize   : col-resize,
+  contextmenu : context-menu,
+  copy        : copy,
+  crosshair   : crosshair,
+  default     : default,
+  eresize     : e-resize,
+  ewresize    : ew-resize,
+  help        : help,
+  inherit     : inherit,
+  initial     : initial,
+  move        : move,
+  nresize     : n-resize,
+  neresize    : ne-resize,
+  neswresize  : nesw-resize,
+  nodrop      : no-drop,
+  none        : none,
+  notallowed  : not-allowed,
+  nsresize    : ns-resize,
+  nwresize    : nw-resize,
+  nwseresize  : nwse-resize,
+  pointer     : pointer,
+  progress    : progress,
+  rowresize   : row-resize,
+  sresize     : s-resize,
+  seresize    : se-resize,
+  swresize    : sw-resize,
+  text        : text,
+  vtext       : vertical-text,
+  wresize     : w-resize,
+  wait        : wait
+) !default;
+
 // Social Colors
 $color-facebook    : #3b5999;
 $color-messenger   : #0084ff;
@@ -190,6 +228,16 @@ $social-colors-prefixes : (
     }
   }
 }
+// ********************************* //
+// ********* MARGINS (IMP) ********* //
+// ********************************* //
+@each $prop-short, $prop-long in $margin-prefixes {
+  @each $value in $space-values {
+    .#{$prop-short}--#{$value}-imp {
+      #{$prop-long}: #{$value}px !important;
+    }
+  }
+}
 
 
 // ********************************* //
@@ -202,6 +250,16 @@ $social-colors-prefixes : (
     }
   }
 }
+// ********************************* //
+// ******** PADDINGS (IMP) ********* //
+// ********************************* //
+@each $prop-short, $prop-long in $padding-prefixes {
+  @each $value in $space-values {
+    .#{$prop-short}--#{$value}-imp {
+      #{$prop-long}: #{$value}px !important;
+    }
+  }
+}
 
 
 // ********************************* //
@@ -211,17 +269,33 @@ $social-colors-prefixes : (
 // Flex
 .fx {
   display: flex;
+
+  // Important
+  &.imp {
+    display: flex !important;
+  }
 }
 
 // Inline Flex
 .fxin {
   display: inline-flex;
+
+  // Important
+  &.imp {
+    display: inline-flex !important;
+  }
 }
 
 // Flex Wrap
 @each $prop-short, $prop-long in $flex-wrap-prefixes {
   .fx--w-#{$prop-short} {
     flex-wrap: #{$prop-long};
+  }
+}
+// Flex Wrap (Important)
+@each $prop-short, $prop-long in $flex-wrap-prefixes {
+  .fx--w-#{$prop-short}-imp {
+    flex-wrap: #{$prop-long} !important;
   }
 }
 
@@ -231,6 +305,12 @@ $social-colors-prefixes : (
     flex-direction: #{$prop-long};
   }
 }
+// Flex Direction (Important)
+@each $prop-short, $prop-long in $flex-direction-prefixes {
+  .fx--d-#{$prop-short}-imp {
+    flex-direction: #{$prop-long} !important;
+  }
+}
 
 // Justify Content
 @each $prop-short, $prop-long in $flex-justify-prefixes {
@@ -238,11 +318,23 @@ $social-colors-prefixes : (
     justify-content: #{$prop-long};
   }
 }
+// Justify Content (Important)
+@each $prop-short, $prop-long in $flex-justify-prefixes {
+  .fx--jc-#{$prop-short}-imp {
+    justify-content: #{$prop-long} !important;
+  }
+}
 
 // Align Items
 @each $prop-short, $prop-long in $flex-align-prefixes {
   .fx--ai-#{$prop-short} {
     align-items: #{$prop-long};
+  }
+}
+// Align Items (Important)
+@each $prop-short, $prop-long in $flex-align-prefixes {
+  .fx--ai-#{$prop-short}-imp {
+    align-items: #{$prop-long} !important;
   }
 }
 
@@ -253,6 +345,19 @@ $social-colors-prefixes : (
 @each $prop-short, $prop-long in $table-prefixes {
   .table--#{$prop-short} {
     display: #{$prop-long};
+    
+    // Full Width
+    &.fw {
+      width: 100%;
+    }
+  }
+}
+// ********************************* //
+// ****** TABLE (DISPLAY) IMP ****** //
+// ********************************* //
+@each $prop-short, $prop-long in $table-prefixes {
+  .table--#{$prop-short}-imp {
+    display: #{$prop-long} !important;
     
     // Full Width
     &.fw {
@@ -274,14 +379,34 @@ $social-colors-prefixes : (
     width: 100%;
   }
 }
+// ********************************* //
+// ***** TABLE (ALIGNMENT) IMP ***** //
+// ********************************* //
+/* Table */
+.sec--table-imp {
+  display: table !important;
+
+  // Full Width
+  &.fw {
+    width: 100%;
+  }
+}
 
 /* Table Row */
 .sec--table-row {
   display: table-row;
 }
+/* Table Row (IMP) */
+.sec--table-row-imp {
+  display: table-row !important;
+}
 
 /* Table Cell */
 .sec--table-cell {
+  display: table-cell;
+}
+/* Table Cell (IMP) */
+.sec--table-cell-imp {
   display: table-cell;
 }
 
@@ -294,6 +419,14 @@ $social-colors-prefixes : (
     vertical-align: #{$prop-long};
   }
 }
+// ********************************* //
+// ***** VERTICAL ALIGN (IMP) ****** //
+// ********************************* //
+@each $prop-short, $prop-long in $vertical-align-prefixes {
+  .valign--#{$prop-short}-imp {
+    vertical-align: #{$prop-long} !important;
+  }
+}
 
 
 // ********************************* //
@@ -303,15 +436,27 @@ $social-colors-prefixes : (
 .width--full {
   width: 100%;
 }
+// Full Width (IMP)
+.width--full-imp {
+  width: 100% !important;
+}
 
 // Half Width
 .width--half {
   width: 50%;
 }
+// Half Width (IMP)
+.width--half-imp {
+  width: 50% !important;
+}
 
 // Auto Width
 .width--auto {
   width: auto;
+}
+// Auto Width (IMP)
+.width--auto-imp {
+  width: auto !important;
 }
 
 
@@ -322,10 +467,18 @@ $social-colors-prefixes : (
 .width--full-vh {
   width: 100vh;
 }
+// Full Width (IMP)
+.width--full-vh-imp {
+  width: 100vh !important;
+}
 
 // Half Width
 .width--half-vh {
   width: 50vh;
+}
+// Half Width (IMP)
+.width--half-vh-imp {
+  width: 50vh !important;
 }
 
 
@@ -336,15 +489,27 @@ $social-colors-prefixes : (
 .height--full {
   height: 100%;
 }
+// Full Height (IMP)
+.height--full-imp {
+  height: 100% !important;
+}
 
 // Half Height
 .height--half {
   height: 50%;
 }
+// Half Height (IMP)
+.height--half-imp {
+  height: 50% !important;
+}
 
 // Auto Height
 .height--auto {
   height: auto;
+}
+// Auto Height (IMP)
+.height--auto {
+  height: auto !important;
 }
 
 
@@ -355,10 +520,18 @@ $social-colors-prefixes : (
 .height--full-vh {
   height: 100vh;
 }
+// Full Height (IMP)
+.height--full-vh-imp {
+  height: 100vh !important;
+}
 
 // Half Height
 .height--half-vh {
   height: 50vh;
+}
+// Half Height (IMP)
+.height--half-vh-imp {
+  height: 50vh !important;
 }
 
 
@@ -370,6 +543,14 @@ $social-colors-prefixes : (
     color: #{$prop-long};
   }
 }
+// ********************************* //
+// ******* COLORS (SOCIAL) IMP ***** //
+// ********************************* //
+@each $prop-short, $prop-long in $social-colors-prefixes {
+  .social--color-#{$prop-short}-imp {
+    color: #{$prop-long} !important;
+  }
+}
 
 
 // ********************************* //
@@ -378,6 +559,14 @@ $social-colors-prefixes : (
 @each $prop-short, $prop-long in $social-colors-prefixes {
   .social--bg-#{$prop-short} {
     background-color: #{$prop-long};
+  }
+}
+// ********************************* //
+// **** BACKGROUNDS (SOCIAL) IMP *** //
+// ********************************* //
+@each $prop-short, $prop-long in $social-colors-prefixes {
+  .social--bg-#{$prop-short}-imp {
+    background-color: #{$prop-long} !important;
   }
 }
 
@@ -392,17 +581,57 @@ $social-colors-prefixes : (
     color: #ffffff;
     transition: all .1s linear;
 
-    &:hover {
+    &.hover:hover {
       opacity: 0.8;
       color: #ffffff;
       transition: all .1s linear;
     }
 
-    &:focus,
-    &:active {
+    &.focus:focus,
+    &.active:active {
       background-color: #{$prop-long};
       color: #ffffff;
     }
+  }
+}
+// ********************************* //
+// ***** BUTTONS (SOCIAL) IMP ****** //
+// ********************************* //
+@each $prop-short, $prop-long in $social-colors-prefixes {
+  .social--btn-#{$prop-short}-imp {
+    background-color: #{$prop-long} !important;
+    color: #ffffff !important;
+    transition: all .1s linear;
+
+    &.hover:hover {
+      opacity: 0.8;
+      color: #ffffff;
+      transition: all .1s linear;
+    }
+
+    &.focus:focus,
+    &.active:active {
+      background-color: #{$prop-long} !important;
+      color: #ffffff;
+    }
+  }
+}
+
+
+// ********************************* //
+// ************ CURSORS ************ //
+// ********************************* //
+@each $prop-short, $prop-long in $cursor-prefixes {
+  .cursor--#{$prop-short} {
+    cursor: #{$prop-long};
+  }
+}
+// ********************************* //
+// ********* CURSORS (IMP) ********* //
+// ********************************* //
+@each $prop-short, $prop-long in $cursor-prefixes {
+  .cursor--#{$prop-short}-imp {
+    cursor: #{$prop-long} !important;
   }
 }
 
@@ -412,29 +641,4 @@ $social-colors-prefixes : (
 // ********************************* //
 .text-underline {
   text-decoration: underline;
-}
-
-.text-white {
-  // color: $white;
-}
-
-.text-red {
-  // color: $material-red;
-}
-
-.text-yellow {
-  // color: $material-yellow-dark;
-}
-
-.text-green {
-  // color: $material-green;
-}
-
-
-
-// ********************************* //
-// ************ CURSORS ************ //
-// ********************************* //
-.cursor_pointer {
-  cursor: pointer;
 }
