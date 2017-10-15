@@ -1,0 +1,16 @@
+// ######################################## //
+// ## SPECIFIC.SCSS ## //
+// ######################################## //
+
+.sp-flex-box-outer {
+
+	// If Flex Wrap
+	&.sp-fw {
+		max-width: 37rem;
+	}
+
+	// If Justify Content
+	&.sp-jc {
+		width: 30rem;
+	}
+}

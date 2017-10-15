@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>CSSAid</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,6 +33,9 @@
 				</div>
 			</div>
 		</div>
+
+
+		<!-- Margins -->
 		<div class="desc--sec">
 			<div class="container">
 				<div class="desc--sec-header">
@@ -40,21 +43,975 @@
 					<p class="desc--sec-subtitle">Use margin utilities to quickly style the margins of an element. Great for any element.</p>
 				</div>
 				<div class="desc--sec-body">
-					<div class="panel">
-						<ul class="feature-list">
-							<li class="feature-list-item">
-								<div class="item-heading">Margin Top</div>
-								<div class="item-body">
-									<pre>
-										&lt;span class="mt--5"&gt;&lt;/span&gt;
-									</pre>
+					<div class="panel example-panel">
+						<div class="example--sec-holder">
+							<div class="example--sec-body">
+								<div class="example-box">
+									<div class="content">
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="box-outer border">
+													<div class="box m--15"></div>
+												</div>
+											</div>
+											<div class="col content-col col-sm-auto">
+												<div class="box-outer border">
+													<div class="box mt--15"></div>
+												</div>
+											</div>
+											<div class="col content-col col-sm-auto">
+												<div class="box-outer border">
+													<div class="box mr--15"></div>
+												</div>
+											</div>
+											<div class="col content-col col-sm-auto">
+												<div class="box-outer border">
+													<div class="box mb--15"></div>
+												</div>
+											</div>
+											<div class="col content-col col-sm-auto">
+												<div class="box-outer border">
+													<div class="box ml--15"></div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-							</li>
-						</ul>
+								<div class="example-code-box">
+									<div class="content">
+										<div class="row">
+											<div class="col">
+												<p class="para">Use margin utilities to quickly style the margins of an element. Great for any element.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
+
+		<!-- Paddings -->
+		<div class="desc--sec">
+			<div class="container">
+				<div class="desc--sec-header">
+					<h3 class="desc--sec-title text-upp">Paddings</h3>
+					<p class="desc--sec-subtitle">Use padding utilities to quickly style the paddings of an element. Great for any element.</p>
+				</div>
+				<div class="desc--sec-body">
+					<div class="panel example-panel">
+						<div class="example--sec-holder">
+							<div class="example--sec-body">
+								<div class="example-box">
+									<div class="content">
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="box-outer p--20 border">
+													<div class="box"></div>
+												</div>
+											</div>
+											<div class="col content-col col-sm-auto">
+												<div class="box-outer pt--20 border">
+													<div class="box"></div>
+												</div>
+											</div>
+											<div class="col content-col col-sm-auto">
+												<div class="box-outer pr--20 border">
+													<div class="box"></div>
+												</div>
+											</div>
+											<div class="col content-col col-sm-auto">
+												<div class="box-outer pb--20 border">
+													<div class="box"></div>
+												</div>
+											</div>
+											<div class="col content-col col-sm-auto">
+												<div class="box-outer pl--20 border">
+													<div class="box"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="example-code-box">
+									<div class="content">
+										<div class="row">
+											<div class="col">
+												<p class="para">Use padding utilities to quickly style the paddings of an element. Great for any element.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Flex -->
+		<div class="desc--sec">
+			<div class="container">
+				<div class="desc--sec-header">
+					<h3 class="desc--sec-title text-upp">Flex (Flexbox)</h3>
+					<p class="desc--sec-subtitle">Make a layout in flex, just by using simple classes. Manage layout, alignment, columns, etc. with ease.</p>
+				</div>
+				<div class="desc--sec-body">
+					<div class="panel example-panel">
+
+						<!-- Flex Layout -->
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Flex Layout</div>
+							</div>
+							<div class="example--sec-body">
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx</code>
+											&rarr;
+											<code>display: flex</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx box-outer border pt--10 pb--10">
+													<div class="box ml--10 mr--10"></div>
+													<div class="box ml--10 mr--10"></div>
+													<div class="box ml--10 mr--10"></div>
+													<div class="box ml--10 mr--10"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Inline Flex Layout -->
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Inline-Flex Layout</div>
+							</div>
+							<div class="example--sec-body">
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">infx</code>
+											&rarr;
+											<code>display: inline-flex</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="infx box-outer border pt--10 pb--10">
+													<div class="box ml--10 mr--10"></div>
+													<div class="box ml--10 mr--10"></div>
+													<div class="box ml--10 mr--10"></div>
+													<div class="box ml--10 mr--10"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Flex Direction -->
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Flex Direction</div>
+							</div>
+
+							<!-- Flex Direction - Row -->
+							<div class="example--sec-body">
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--fd-r</code>
+											&rarr;
+											<code>flex-direction: row</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--d-r box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">4</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Flex Direction - Row Reverse -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--fd-rr</code>
+											&rarr;
+											<code>flex-direction: row-reverse</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--d-rr sp-flex-box-outer box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">4</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Flex Direction - Column -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--fd-c</code>
+											&rarr;
+											<code>flex-direction: column</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--d-c sp-flex-box-outer box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">4</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Flex Direction - Column -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--fd-cr</code>
+											&rarr;
+											<code>flex-direction: column-reverse</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--d-cr sp-flex-box-outer box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">4</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<!-- Flex Wrap -->
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Flex Wrap</div>
+							</div>
+
+							<!-- Flex Wrap - Wrap -->
+							<div class="example--sec-body">
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--fw-w</code>
+											&rarr;
+											<code>flex-wrap: wrap</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--w-w sp-flex-box-outer sp-fw box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">4</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">5</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">6</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">7</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">8</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Flex Wrap - Wrap Reverse -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--fw-wr</code>
+											&rarr;
+											<code>flex-wrap: wrap-reverse</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--w-wr sp-flex-box-outer sp-fw box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">4</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">5</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">6</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">7</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">8</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Flex Wrap - No Wrap -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--fw-nw</code>
+											&rarr;
+											<code>flex-wrap: no-wrap</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--w-nw sp-flex-box-outer sp-fw box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">4</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">5</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">6</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">7</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">8</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<!-- Flex Align Items -->
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Align Items (Flex)</div>
+							</div>
+
+							<!-- Flex Align Items - Flex Start -->
+							<div class="example--sec-body">
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--ai-fs</code>
+											&rarr;
+											<code>align-items: flex-start</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--ai-fs sp-flex-box-outer box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 3rem;">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 2rem;">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 6rem;">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 4rem;">
+														<span class="text no">4</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Flex Align Items - Flex End -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--ai-fe</code>
+											&rarr;
+											<code>align-items: flex-end</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--ai-fe sp-flex-box-outer box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 3rem;">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 2rem;">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 6rem;">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 4rem;">
+														<span class="text no">4</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Flex Align Items - Center -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--ai-c</code>
+											&rarr;
+											<code>align-items: center</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--ai-c sp-flex-box-outer box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 3rem;">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 2rem;">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 6rem;">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 4rem;">
+														<span class="text no">4</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Flex Align Items - Baseline -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--ai-b</code>
+											&rarr;
+											<code>align-items: baseline</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--ai-b sp-flex-box-outer box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 3rem;">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 2rem;">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 6rem;">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 4rem;">
+														<span class="text no">4</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Flex Align Items - Stretch -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--ai-s</code>
+											&rarr;
+											<code>align-items: stretch</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--ai-s sp-flex-box-outer box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: auto;">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: auto;">
+														<span class="text no">2</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: auto;">
+														<span class="text no">3</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10" style="height: 4rem;">
+														<span class="text no">4</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Flex Justify Content -->
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Justify Content (Flex)</div>
+							</div>
+
+							<!-- Flex Justify Content - Flex Start -->
+							<div class="example--sec-body">
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--jc-fs</code>
+											&rarr;
+											<code>justify-content: flex-start</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--jc-fs sp-flex-box-outer sp-jc box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">2</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Flex Justify Content - Flex End -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--jc-fe</code>
+											&rarr;
+											<code>justify-content: flex-end</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--jc-fe sp-flex-box-outer sp-jc box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">2</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Flex Justify Content - Space Around -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--jc-sa</code>
+											&rarr;
+											<code>justify-content: space-around</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--jc-sa sp-flex-box-outer sp-jc box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">2</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Flex Justify Content - Space Between -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">fx--jc-sb</code>
+											&rarr;
+											<code>justify-content: space-between</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col col-sm-auto">
+												<div class="fx fx--jc-sb sp-flex-box-outer sp-jc box-outer border pt--10">
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">1</span>
+													</div>
+													<div class="box fx fx--ai-c fx--jc-c ml--10 mr--10 mb--10">
+														<span class="text no">2</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="example-code-box">
+									<div class="content">
+										<div class="row">
+											<div class="col">
+												<p class="para">Use <code>*-imp</code> in the end/suffix to overwrite the styles with <code>!important</code></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Tables -->
+		<div class="desc--sec">
+			<div class="container">
+				<div class="desc--sec-header">
+					<h3 class="desc--sec-title text-upp">Tables</h3>
+					<p class="desc--sec-subtitle">Use display table utilities to quickly style the layout of an element. Great for any table like layout.</p>
+				</div>
+
+				<!-- Table, Table Row, Table Cell -->
+				<div class="desc--sec-body">
+					<div class="panel example-panel">
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Table, Table Row &amp; Table Cell</div>
+							</div>
+							<div class="example--sec-body">
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">sec--table</code>
+											&rarr;
+											<code>display: table</code>
+										</p>
+										<p class="para">
+											<code class="highlight">sec--table-row</code>
+											&rarr;
+											<code>display: table-row</code>
+										</p>
+										<p class="para">
+											<code class="highlight">sec--table-cell</code>
+											&rarr;
+											<code>display: table-cell</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col">
+												<div class="box-outer p--5 sec--table border">
+													<div class="sec--table-row">
+														<div class="box-cover sec--table-cell">
+															<div class="box fx fx--ai-c fx--jc-c m--5">
+																<span class="text no">1</span>
+															</div>
+														</div>
+														<div class="box-cover sec--table-cell">
+															<div class="box fx fx--ai-c fx--jc-c m--5">
+																<span class="text no">2</span>
+															</div>
+														</div>
+													</div>
+													<div class="sec--table-row">
+														<div class="box-cover sec--table-cell">
+															<div class="box fx fx--ai-c fx--jc-c m--5">
+																<span class="text no">3</span>
+															</div>
+														</div>
+														<div class="box-cover sec--table-cell">
+															<div class="box fx fx--ai-c fx--jc-c m--5">
+																<span class="text no">4</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="example-code-box">
+									<div class="content">
+										<div class="row">
+											<div class="col">
+												<p class="para">For full width tables use class <code>.fw</code> with <code>.sec--table</code></p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Vertical Alignment -->
+		<div class="desc--sec">
+			<div class="container">
+				<div class="desc--sec-header">
+					<h3 class="desc--sec-title text-upp">Vertical Alignment</h3>
+					<p class="desc--sec-subtitle">Use vertical alignment utilities to quickly align the layout vertically. Great for any layouts.</p>
+				</div>
+
+				<div class="desc--sec-body">
+					<div class="panel example-panel">
+
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Vertical Align</div>
+							</div>
+							<div class="example--sec-body">
+								
+								<!-- Vertical Align: Baseline -->
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">valign--t</code>
+											&rarr;
+											<code>vertical-align: top</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col">
+												<div class="box-outer p--5 sec--table border">
+													<div class="box-cover sec--table-cell valign--t">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 3rem;">
+															<span class="text no">1</span>
+														</div>
+													</div>
+													<div class="box-cover sec--table-cell valign--t">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 4rem;">
+															<span class="text no">2</span>
+														</div>
+													</div>
+													<div class="box-cover sec--table-cell valign--t">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 5rem;">
+															<span class="text no">3</span>
+														</div>
+													</div>
+													<div class="box-cover sec--table-cell valign--t">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 6rem;">
+															<span class="text no">4</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Vertical Align: Middle -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">valign--m</code>
+											&rarr;
+											<code>vertical-align: middle</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col">
+												<div class="box-outer p--5 sec--table border">
+													<div class="box-cover sec--table-cell valign--m">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 3rem;">
+															<span class="text no">1</span>
+														</div>
+													</div>
+													<div class="box-cover sec--table-cell valign--m">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 4rem;">
+															<span class="text no">2</span>
+														</div>
+													</div>
+													<div class="box-cover sec--table-cell valign--m">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 5rem;">
+															<span class="text no">3</span>
+														</div>
+													</div>
+													<div class="box-cover sec--table-cell valign--m">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 6rem;">
+															<span class="text no">4</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Vertical Align: Bottom -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">valign--b</code>
+											&rarr;
+											<code>vertical-align: bottom</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col">
+												<div class="box-outer p--5 sec--table border">
+													<div class="box-cover sec--table-cell valign--b">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 3rem;">
+															<span class="text no">1</span>
+														</div>
+													</div>
+													<div class="box-cover sec--table-cell valign--b">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 4rem;">
+															<span class="text no">2</span>
+														</div>
+													</div>
+													<div class="box-cover sec--table-cell valign--b">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 5rem;">
+															<span class="text no">3</span>
+														</div>
+													</div>
+													<div class="box-cover sec--table-cell valign--b">
+														<div class="box fx fx--ai-c fx--jc-c m--5" style="height: 6rem;">
+															<span class="text no">4</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="example-code-box mt--25">
+									<div class="content">
+										<div class="row">
+											<div class="col">
+												<p class="para">Other classes also includes:</p>
+												<ul class="example-list mt--10">
+													<li>
+														<p class="para">
+															<code class="highlight">valign--bl</code>
+															&rarr;
+															<code>vertical-align: baseline</code>
+														</p>
+													</li>
+													<li>
+														<p class="para">
+															<code class="highlight">valign--tt</code>
+															&rarr;
+															<code>vertical-align: text-top</code>
+														</p>
+													</li>
+													<li>
+														<p class="para">
+															<code class="highlight">valign--tb</code>
+															&rarr;
+															<code>vertical-align: text-bottom</code>
+														</p>
+													</li>
+													<li>
+														<p class="para">
+															<code class="highlight">valign--sub</code>
+															&rarr;
+															<code>vertical-align: sub</code>
+														</p>
+													</li>
+													<li>
+														<p class="para">
+															<code class="highlight">valign--sup</code>
+															&rarr;
+															<code>vertical-align: sup</code>
+														</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </body>
 </html>

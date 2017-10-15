@@ -269,21 +269,19 @@ $social-colors-prefixes : (
 // Flex
 .fx {
   display: flex;
-
-  // Important
-  &.imp {
-    display: flex !important;
-  }
+}
+// Flex (Important)
+.fx-imp {
+  display: flex !important;
 }
 
 // Inline Flex
-.fxin {
+.infx {
   display: inline-flex;
-
-  // Important
-  &.imp {
-    display: inline-flex !important;
-  }
+}
+// Inline-Flex (Important)
+.infx-imp {
+  display: inline-flex !important;
 }
 
 // Flex Wrap

@@ -3,14 +3,14 @@
 body {
   font-family: Nunito;
   background: #298FFF;
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 0 20px; }
 
 .hero-sec {
   padding: 6rem 0; }
   .hero-sec h1 {
     font-family: Nunito;
-    font-size: 9rem;
+    font-size: 6rem;
     font-weight: 900;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -30,18 +30,18 @@ body {
       transition: all .15s ease-in-out; }
       .hero-sec h1:hover .boxed {
         background: #298FFF;
-        color: #ffffff; }
+        color: #FFFFFF; }
       .hero-sec h1:hover .unboxed {
-        background: #ffffff;
+        background: #FFFFFF;
         color: #298FFF; }
     @media screen and (max-width: 767px) {
       .hero-sec h1 {
         font-size: 5rem; } }
     .hero-sec h1 .boxed {
-      background: #ffffff;
+      background: #FFFFFF;
       color: #298FFF;
       border-radius: 100px 0 0 100px;
-      border: 8px solid #ffffff;
+      border: 8px solid #FFFFFF;
       padding: 12px 14px 6px 30px;
       -webkit-transition: all .15s ease-in-out;
       -o-transition: all .15s ease-in-out;
@@ -51,7 +51,7 @@ body {
           padding: 6px 0px 3px 15px; } }
     .hero-sec h1 .unboxed {
       border-radius: 0 100px 100px 0;
-      border: 8px solid #ffffff;
+      border: 8px solid #FFFFFF;
       padding: 12px 34px 6px 20px;
       -webkit-transition: all .15s ease-in-out;
       -o-transition: all .15s ease-in-out;
@@ -60,9 +60,9 @@ body {
         .hero-sec h1 .unboxed {
           padding: 6px 20px 3px 15px; } }
   .hero-sec .lead {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
-    margin-top: 30px; }
+    margin-top: 1rem; }
     @media screen and (max-width: 767px) {
       .hero-sec .lead {
         font-size: 2.5rem;
@@ -71,7 +71,8 @@ body {
     color: #ffffff; }
 
 .desc--sec {
-  font-family: 'Zilla Slab'; }
+  font-family: 'Zilla Slab';
+  margin-bottom: 8rem; }
   .desc--sec .container {
     width: 100%;
     max-width: 900px; }
@@ -91,12 +92,17 @@ body {
     color: #767676;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+    .desc--sec .panel.example-panel {
+      padding: 20px; }
     .desc--sec .panel .panel-heading {
       padding: 0;
       margin-bottom: 15px; }
     .desc--sec .panel .panel-title {
       font-size: 30px;
       font-weight: 600; }
+    .desc--sec .panel .panel-ib-title {
+      font-size: 22px;
+      margin-bottom: 1rem; }
     .desc--sec .panel .panel-body {
       padding: 0; }
   .desc--sec p {
@@ -106,6 +112,39 @@ code {
   font-size: 75%;
   background-color: #E2F0FF;
   color: #298FFF; }
+  code.highlight {
+    background-color: #298FFF;
+    color: #E2F0FF; }
+
+.example--sec-holder {
+  margin-bottom: 5rem; }
+  .example--sec-holder:last-child {
+    margin-bottom: 0; }
+  .example--sec-holder .example--sec-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: .8rem; }
+  .example--sec-holder .example-box .content {
+    margin: 0 0 .5rem;
+    padding-bottom: .5rem; }
+  .example--sec-holder .example-box .box-outer.border {
+    border: 1px solid #BBBBBB !important; }
+  .example--sec-holder .example-box .box {
+    width: 6rem;
+    height: 6rem;
+    background-color: #DDDDDD; }
+    .example--sec-holder .example-box .box .text.no {
+      font-size: 22px;
+      font-weight: 500; }
+  .example--sec-holder .example-code-box .content {
+    margin: 0; }
+  .example--sec-holder .example-code-box .para {
+    font-size: 1.1rem;
+    margin-bottom: 0; }
+  .example--sec-holder .example-list {
+    padding-left: 20px; }
+    .example--sec-holder .example-list li {
+      margin-bottom: .5rem; }
 
 .m--0 {
   margin: 0px; }
@@ -1372,22 +1411,24 @@ code {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  .fx.imp {
-    display: -webkit-box !important;
-    display: -webkit-flex !important;
-    display: -ms-flexbox !important;
-    display: flex !important; }
 
-.fxin {
+.fx-imp {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+.infx {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex; }
-  .fxin.imp {
-    display: -webkit-inline-box !important;
-    display: -webkit-inline-flex !important;
-    display: -ms-inline-flexbox !important;
-    display: inline-flex !important; }
+
+.infx-imp {
+  display: -webkit-inline-box !important;
+  display: -webkit-inline-flex !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important; }
 
 .fx--w-nw {
   -webkit-flex-wrap: no-wrap;
@@ -3835,5 +3876,11 @@ code {
 
 .text-underline {
   text-decoration: underline; }
+
+.sp-flex-box-outer.sp-fw {
+  max-width: 37rem; }
+
+.sp-flex-box-outer.sp-jc {
+  width: 30rem; }
 
 /*# sourceMappingURL=style.css.map */

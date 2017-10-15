@@ -17,7 +17,7 @@ body {
 
 	h1 {
 		font-family: Nunito;
-		font-size: 9rem;
+		font-size: 6rem;
 		font-weight: 900;
 		display: inline-flex;
 		justify-content: center;
@@ -71,9 +71,9 @@ body {
 	}
 
 	.lead {
-		font-size: 3rem;
+		font-size: 2rem;
 		font-weight: 300;
-		margin-top: 30px;
+		margin-top: 1rem;
 
 		// On Mobiles
 		@media screen and (max-width: 767px) {
@@ -92,6 +92,7 @@ body {
 // Description Section
 .desc--sec {
 	font-family: 'Zilla Slab';
+	margin-bottom: 8rem;
 
 	// Contaier
 	.container {
@@ -125,6 +126,11 @@ body {
 		color: #767676;
 		box-shadow: 0 1px 2px rgba(#000, 0.1);
 
+		// Example Panel
+		&.example-panel {
+			padding: 20px;
+		}
+
 		// Panel Heading
 		.panel-heading {
 			padding: 0;
@@ -135,6 +141,12 @@ body {
 		.panel-title {
 			font-size: 30px;
 			font-weight: 600;
+		}
+
+		// Panel In-Between Title
+		.panel-ib-title {
+			font-size: 22px;
+			margin-bottom: 1rem;
 		}
 
 		// Panel Body
@@ -155,4 +167,105 @@ code {
 	font-size: 75%;
 	background-color: $theme-primary-bg;
 	color: $theme-primary;
+
+	// Highlight
+	&.highlight {
+		background-color: $theme-primary;
+		color: $theme-primary-bg;
+	}
+}
+
+
+
+
+
+
+
+// Example Section Holder
+.example--sec-holder {
+	margin-bottom: 5rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	// Example Section Header
+	.example--sec-header {}
+
+	// Example Section Body
+	.example--sec-body {}
+
+	// Example Section Title
+	.example--sec-title {
+		font-size: 28px;
+		font-weight: 600;
+		margin-bottom: .8rem;
+	}
+
+	// Example Box
+	.example-box {
+
+		// Content
+		.content {
+			margin: 0 0 .5rem;
+			padding-bottom: .5rem;
+
+			// Content Row
+			.content-row {}
+
+			// Content Column
+			.content-col {}
+		}
+
+		// Box Outer
+		.box-outer {
+
+			// With Border
+			&.border {
+				border: 1px solid $gray-b !important;
+			}
+		}
+
+		// Box
+		.box {
+			width: 6rem;
+			height: 6rem;
+			background-color: $gray-d;
+
+			// Text
+			.text {
+
+				// If Number
+				&.no {
+					font-size: 22px;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+
+
+	// Example Code Box
+	.example-code-box {
+
+		.content {
+			margin: 0;
+		}
+
+		// Para
+		.para {
+			font-size: 1.1rem;
+			margin-bottom: 0;
+		}
+	}
+
+	// Example List
+	.example-list {
+		padding-left: 20px;
+
+		// List Item
+		li {
+			margin-bottom: .5rem;
+		}
+	}
 }
