@@ -2,6 +2,7 @@
 // ## SPECIFIC.SCSS ## //
 // ######################################## //
 
+// For Flex Items
 .sp-flex-box-outer {
 
 	// If Flex Wrap
@@ -13,4 +14,9 @@
 	&.sp-jc {
 		width: 30rem;
 	}
+}
+
+// For Cursors
+.sp-cursor {
+	max-width: 47.2rem;
 }

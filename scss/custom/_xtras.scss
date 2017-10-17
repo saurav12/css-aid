@@ -459,24 +459,24 @@ $social-colors-prefixes : (
 
 
 // ********************************* //
-// ********** WIDTH (vh) *********** //
+// ********** WIDTH (vw) *********** //
 // ********************************* //
 // Full Width
-.width--full-vh {
-  width: 100vh;
+.width--full-vw {
+  width: 100vw;
 }
 // Full Width (IMP)
-.width--full-vh-imp {
-  width: 100vh !important;
+.width--full-vw-imp {
+  width: 100vw !important;
 }
 
 // Half Width
-.width--half-vh {
-  width: 50vh;
+.width--half-vw {
+  width: 50vw;
 }
 // Half Width (IMP)
-.width--half-vh-imp {
-  width: 50vh !important;
+.width--half-vw-imp {
+  width: 50vw !important;
 }
 
 

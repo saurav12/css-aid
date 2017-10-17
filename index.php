@@ -1012,6 +1012,311 @@
 			</div>
 		</div>
 
+		<!-- Width & Height -->
+		<div class="desc--sec">
+			<div class="container">
+				<div class="desc--sec-header">
+					<h3 class="desc--sec-title text-upp">Width &amp; Height</h3>
+					<p class="desc--sec-subtitle">Use width &amp; height utilities to quickly set width &amp; height to an element.</p>
+				</div>
+
+				<div class="desc--sec-body">
+					<div class="panel example-panel">
+
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Width</div>
+							</div>
+							<div class="example--sec-body">
+								
+								<!-- Width: Full -->
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">width--full</code>
+											&rarr;
+											<code>width: 100%</code>
+										</p>
+										<p class="para">
+											<code class="highlight">width--full-vw</code>
+											&rarr;
+											<code>width: 100vw</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col">
+												<div class="box-outer p--10 border">
+													<div class="box-cover">
+														<div class="box fx fx--ai-c fx--jc-c width--full-imp">
+															<span class="text no">width: 100%</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Width: Half -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">width--half</code>
+											&rarr;
+											<code>width: 50%</code>
+										</p>
+										<p class="para">
+											<code class="highlight">width--half-vw</code>
+											&rarr;
+											<code>width: 50vw</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col">
+												<div class="box-outer p--10 border">
+													<div class="box-cover">
+														<div class="box fx fx--ai-c fx--jc-c width--half-imp">
+															<span class="text no">width: 50% | 50vw</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Height</div>
+							</div>
+							<div class="example--sec-body">
+								
+								<!-- Height: Full -->
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">height--full</code>
+											&rarr;
+											<code>height: 100%</code>
+										</p>
+										<p class="para">
+											<code class="highlight">width--full-vh</code>
+											&rarr;
+											<code>height: 100vh</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col">
+												<div class="box-outer p--10 border" style="height: 12rem">
+													<div class="box-cover height--full-imp">
+														<div class="box fx fx--ai-c fx--jc-c height--full-imp" style="width: 20rem">
+															<span class="text no">height: 100% | 100vh</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Height: Full -->
+								<div class="example-box mt--25">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">height--half</code>
+											&rarr;
+											<code>height: 50%</code>
+										</p>
+										<p class="para">
+											<code class="highlight">width--half-vh</code>
+											&rarr;
+											<code>height: 50vh</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col">
+												<div class="box-outer p--10 border" style="height: 12rem">
+													<div class="box-cover height--full-imp">
+														<div class="box fx fx--ai-c fx--jc-c height--half-imp" style="width: 20rem">
+															<span class="text no">height: 50% | 50vh</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="example-code-box">
+									<div class="content">
+										<div class="row">
+											<div class="col">
+												<p class="para">You can also use <code>.width--auto</code> and <code>.height--auto</code> for resetting width &amp; height respectively.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Cursors -->
+		<div class="desc--sec">
+			<div class="container">
+				<div class="desc--sec-header">
+					<h3 class="desc--sec-title text-upp">Cursor Types</h3>
+					<p class="desc--sec-subtitle">Just use simple classes to change your cursors.</p>
+				</div>
+
+				<div class="desc--sec-body">
+					<div class="panel example-panel">
+
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Cursors</div>
+							</div>
+							<div class="example--sec-body">
+								
+								<!-- Width: Full -->
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">cursor--[cursor-name]</code>
+											&rarr;
+											<code>cursor: [cursor-name]</code>
+										</p>
+										<p class="para">Hover your cursor on below columns to see them in action</p>
+										<div class="row content-row">
+											<div class="col content-col">
+												<div class="box-outer sp-cursor pt--10 pl--5 pr--5 border">
+													<div class="box-cover fx fx--w-w text-center">
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--alias">
+															<span class="text">alias</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--allscroll">
+															<span class="text">all-scroll</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--auto">
+															<span class="text">auto</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--cell">
+															<span class="text">cell</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--colresize">
+															<span class="text">col-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--contextmenu">
+															<span class="text">context-menu</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--copy">
+															<span class="text">copy</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--crosshair">
+															<span class="text">crosshair</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--default">
+															<span class="text">default</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--eresize">
+															<span class="text">e-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--ewresize">
+															<span class="text">ew-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--help">
+															<span class="text">ew-help</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--move">
+															<span class="text">ew-move</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--nresize">
+															<span class="text">n-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--nresize">
+															<span class="text">n-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--neresize">
+															<span class="text">ne-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--neswresize">
+															<span class="text">nesw-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--nodrop">
+															<span class="text">no-drop</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--none">
+															<span class="text">none</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--notallowed">
+															<span class="text">not-allowed</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--nsresize">
+															<span class="text">ns-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--nwresize">
+															<span class="text">nw-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--nwseresize">
+															<span class="text">nwse-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--pointer">
+															<span class="text">pointer</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--progress">
+															<span class="text">progress</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--rowresize">
+															<span class="text">row-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--sresize">
+															<span class="text">sresize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--seresize">
+															<span class="text">se-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--swresize">
+															<span class="text">sw-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--text">
+															<span class="text">text</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--vtext">
+															<span class="text">vertical-text</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--wresize">
+															<span class="text">w-resize</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--wait">
+															<span class="text">wait</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="example-code-box">
+									<div class="content">
+										<div class="row">
+											<div class="col">
+												<p class="para">Use <code>*-imp</code> in the end/suffix to overwrite the styles with <code>!important</code></p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </body>
 </html>

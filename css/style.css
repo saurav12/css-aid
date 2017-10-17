@@ -133,9 +133,12 @@ code {
     width: 6rem;
     height: 6rem;
     background-color: #DDDDDD; }
-    .example--sec-holder .example-box .box .text.no {
-      font-size: 22px;
-      font-weight: 500; }
+    .example--sec-holder .example-box .box .text {
+      font-size: 18px;
+      line-height: 1; }
+      .example--sec-holder .example-box .box .text.no {
+        font-size: 22px;
+        font-weight: 500; }
   .example--sec-holder .example-code-box .content {
     margin: 0; }
   .example--sec-holder .example-code-box .para {
@@ -1956,17 +1959,17 @@ code {
 .width--auto-imp {
   width: auto !important; }
 
-.width--full-vh {
-  width: 100vh; }
+.width--full-vw {
+  width: 100vw; }
 
-.width--full-vh-imp {
-  width: 100vh !important; }
+.width--full-vw-imp {
+  width: 100vw !important; }
 
-.width--half-vh {
-  width: 50vh; }
+.width--half-vw {
+  width: 50vw; }
 
-.width--half-vh-imp {
-  width: 50vh !important; }
+.width--half-vw-imp {
+  width: 50vw !important; }
 
 .height--full {
   height: 100%; }
@@ -3882,5 +3885,8 @@ code {
 
 .sp-flex-box-outer.sp-jc {
   width: 30rem; }
+
+.sp-cursor {
+  max-width: 47.2rem; }
 
 /*# sourceMappingURL=style.css.map */
