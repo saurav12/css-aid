@@ -234,13 +234,21 @@ code {
 
 			// Text
 			.text {
-				font-size: 18px;
+				font-size: 16px;
 				line-height: 1;
 
 				// If Number
 				&.no {
 					font-size: 22px;
 					font-weight: 500;
+				}
+
+				&.semibold {
+					font-weight: 500;
+				}
+
+				&.bold {
+					font-weight: bold;
 				}
 			}
 		}

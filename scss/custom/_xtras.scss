@@ -162,7 +162,6 @@ $color-blogger     : #f57d00;
 $color-whatsapp    : #4dc247;
 $color-wechat      : #09b83e;
 $color-line        : #00c300;
-$color-medium      : #02b875;
 $color-vine        : #00b489;
 $color-slack       : #3aaf85;
 $color-instagram   : #c21473;
@@ -171,6 +170,7 @@ $color-flickr      : #ff0084;
 $color-foursquare  : #f94877;
 $color-behance     : #1769ff;
 $color-github      : #24292e;
+$color-medium      : #12100e;
 $color-spotify     : #00e461;
 $color-snapchat    : #fffc00;
 
@@ -537,7 +537,7 @@ $social-colors-prefixes : (
 // ********* COLORS (SOCIAL) ******* //
 // ********************************* //
 @each $prop-short, $prop-long in $social-colors-prefixes {
-  .social--color-#{$prop-short} {
+  .color--social-#{$prop-short} {
     color: #{$prop-long};
   }
 }
@@ -545,7 +545,7 @@ $social-colors-prefixes : (
 // ******* COLORS (SOCIAL) IMP ***** //
 // ********************************* //
 @each $prop-short, $prop-long in $social-colors-prefixes {
-  .social--color-#{$prop-short}-imp {
+  .color--social-#{$prop-short}-imp {
     color: #{$prop-long} !important;
   }
 }
@@ -555,7 +555,7 @@ $social-colors-prefixes : (
 // ***** BACKGROUNDS (SOCIAL) ****** //
 // ********************************* //
 @each $prop-short, $prop-long in $social-colors-prefixes {
-  .social--bg-#{$prop-short} {
+  .bgcolor--social-#{$prop-short} {
     background-color: #{$prop-long};
   }
 }
@@ -563,7 +563,7 @@ $social-colors-prefixes : (
 // **** BACKGROUNDS (SOCIAL) IMP *** //
 // ********************************* //
 @each $prop-short, $prop-long in $social-colors-prefixes {
-  .social--bg-#{$prop-short}-imp {
+  .bgcolor--social-#{$prop-short}-imp {
     background-color: #{$prop-long} !important;
   }
 }
@@ -574,7 +574,7 @@ $social-colors-prefixes : (
 // ******* BUTTONS (SOCIAL) ******** //
 // ********************************* //
 @each $prop-short, $prop-long in $social-colors-prefixes {
-  .social--btn-#{$prop-short} {
+  .btn--social-#{$prop-short} {
     background-color: #{$prop-long};
     color: #ffffff;
     transition: all .1s linear;
@@ -596,7 +596,7 @@ $social-colors-prefixes : (
 // ***** BUTTONS (SOCIAL) IMP ****** //
 // ********************************* //
 @each $prop-short, $prop-long in $social-colors-prefixes {
-  .social--btn-#{$prop-short}-imp {
+  .btn--social-#{$prop-short}-imp {
     background-color: #{$prop-long} !important;
     color: #ffffff !important;
     transition: all .1s linear;

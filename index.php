@@ -1227,10 +1227,10 @@
 															<span class="text">ew-resize</span>
 														</div>
 														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--help">
-															<span class="text">ew-help</span>
+															<span class="text">help</span>
 														</div>
 														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--move">
-															<span class="text">ew-move</span>
+															<span class="text">move</span>
 														</div>
 														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--nresize">
 															<span class="text">n-resize</span>
@@ -1291,6 +1291,174 @@
 														</div>
 														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c cursor--wait">
 															<span class="text">wait</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="example-code-box">
+									<div class="content">
+										<div class="row">
+											<div class="col">
+												<p class="para">Use <code>*-imp</code> in the end/suffix to overwrite the styles with <code>!important</code></p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Colors (Social) -->
+		<div class="desc--sec">
+			<div class="container">
+				<div class="desc--sec-header">
+					<h3 class="desc--sec-title text-upp">Social Media Colors</h3>
+					<p class="desc--sec-subtitle">Just use simple classes for social media colors.</p>
+				</div>
+
+				<div class="desc--sec-body">
+					<div class="panel example-panel">
+
+						<div class="example--sec-holder">
+							<div class="example--sec-header">
+								<div class="example--sec-title">Colors (Social)</div>
+							</div>
+							<div class="example--sec-body">
+								
+								<!-- Width: Full -->
+								<div class="example-box">
+									<div class="content">
+										<p class="para">
+											<code class="highlight">color--social-[social-media-name]</code>
+											&rarr;
+											<code>color: [social-media-name]</code>
+										</p>
+										<div class="row content-row">
+											<div class="col content-col">
+												<div class="box-outer sp-social-colors pt--10 pl--5 pr--5 border">
+													<div class="box-cover fx fx--w-w text-center">
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-facebook-imp">
+															<span class="text semibold">facebook</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-messenger-imp">
+															<span class="text semibold">messenger</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-twitter-imp">
+															<span class="text semibold">twitter</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-linkedin-imp">
+															<span class="text semibold">linkedin</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-skype-imp">
+															<span class="text semibold">skype</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-dropbox-imp">
+															<span class="text semibold">dropbox</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-wordpress-imp">
+															<span class="text semibold">wordpress</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-vimeo-imp">
+															<span class="text semibold">vimeo</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-slideshare-imp">
+															<span class="text semibold">slideshare</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-vk-imp">
+															<span class="text semibold">vk</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-tumblr-imp">
+															<span class="text semibold">tumblr</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-yahoo-imp">
+															<span class="text semibold">yahoo</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-gplus-imp">
+															<span class="text semibold">google plus</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-stumbleupon-imp">
+															<span class="text semibold">stumble upon</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-reddit-imp">
+															<span class="text semibold">reddit</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-youtube-imp">
+															<span class="text semibold">youtube</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-quora-imp">
+															<span class="text semibold">quora</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-pinterest-imp">
+															<span class="text semibold">pinterest</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-yelp-imp">
+															<span class="text semibold">yelp</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-weibo-imp">
+															<span class="text semibold">weibo</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-producthunt-imp">
+															<span class="text semibold">product hunt</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-hackernews-imp">
+															<span class="text semibold">hacker news</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-soundcloud-imp">
+															<span class="text semibold">soundcloud</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-blogger-imp">
+															<span class="text semibold">blogger</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-whatsapp-imp">
+															<span class="text semibold">whatsapp</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-wechat-imp">
+															<span class="text semibold">wechat</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-line-imp">
+															<span class="text semibold">line</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-vine-imp">
+															<span class="text semibold">vine</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-slack-imp">
+															<span class="text semibold">slack</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-instagram-imp">
+															<span class="text semibold">instagram</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-dribbble-imp">
+															<span class="text semibold">dribbble</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-flickr-imp">
+															<span class="text semibold">flickr</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-foursquare-imp">
+															<span class="text semibold">foursquare</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-behance-imp">
+															<span class="text semibold">behance</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-medium-imp">
+															<span class="text semibold">medium</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-github-imp">
+															<span class="text semibold">github</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-spotify-imp">
+															<span class="text semibold">spotify</span>
+														</div>
+														<div class="box ml--5 mr--5 mb--10 fx fx--ai-c fx--jc-c bgcolor--social-snapchat-imp">
+															<span class="text semibold">snapchat</span>
 														</div>
 													</div>
 												</div>

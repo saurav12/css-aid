@@ -20,3 +20,14 @@
 .sp-cursor {
 	max-width: 47.2rem;
 }
+
+// For Social Colors
+.sp-social-colors {
+	max-width: 47.2rem;
+
+	// Box
+	.box {
+		padding: .6rem;
+		color: $white;
+	}
+}
