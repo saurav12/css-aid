@@ -10,6 +10,16 @@ body {
 	background: $theme-primary;
 	color: $white;
 	padding: 0 20px;
+
+	// On Mobiles
+	@media screen and (max-width: 767px) {
+		padding: 0;
+	}
+}
+
+// Light Text
+.text-opacity-6 {
+	opacity: 0.6;
 }
 
 .hero-sec {
@@ -40,7 +50,7 @@ body {
 
 		// On Mobiles
 		@media screen and (max-width: 767px) {
-			font-size: 5rem;
+			font-size: 4.5rem;
 		}
 
 		.boxed {
@@ -93,6 +103,11 @@ body {
 .desc--sec {
 	font-family: 'Zilla Slab';
 	margin-bottom: 8rem;
+
+	// On Mobiles
+	@media screen and (max-width: 767px) {
+		margin-bottom: 6rem;
+	}
 
 	// Contaier
 	.container {
@@ -177,7 +192,7 @@ code {
 	// Bordered
 	&.bordered {
 		display: block;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		padding: 0.5rem 1rem;
 		background-color: $theme-primary-bg;
 		color: $theme-primary;
@@ -187,10 +202,38 @@ code {
 	}
 }
 
+// Code Block
+.code-block {
+	position: relative;
 
+	// Icon Holder
+	.icon-holder {
+		position: absolute;
+		top: 50%;
+		right: 0.45rem;
+		transform: translateY(-50%);
+		width: 2rem;
+		height: 2rem;
+		border-radius: 0.25rem;
+		background-color: $theme-primary;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: all .1s ease-in-out;
 
+		&:hover {
+			background-color: lighten($theme-primary, 5%);
+			transition: all .1s ease-in-out;
+		}
+	}
 
-
+	// Attribute Icon
+	.attr-icon {
+		max-width: 1.2rem;
+		filter: contrast(0) brightness(200%);
+	}
+}
 
 
 // Example Section Holder
