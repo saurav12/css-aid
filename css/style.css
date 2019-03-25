@@ -13,11 +13,9 @@ body {
     font-size: 6rem;
     font-weight: 900;
     display: -webkit-inline-box;
-    display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     cursor: default;
@@ -115,6 +113,15 @@ code {
   code.highlight {
     background-color: #298FFF;
     color: #E2F0FF; }
+  code.bordered {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: #E2F0FF;
+    color: #298FFF;
+    white-space: pre;
+    overflow-x: auto;
+    border: 2px dashed #298FFF; }
 
 .example--sec-holder {
   margin-bottom: 5rem; }
@@ -1415,325 +1422,271 @@ code {
 
 .fx {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
 .fx-imp {
   display: -webkit-box !important;
-  display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important; }
 
 .infx {
   display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex; }
 
 .infx-imp {
   display: -webkit-inline-box !important;
-  display: -webkit-inline-flex !important;
   display: -ms-inline-flexbox !important;
   display: inline-flex !important; }
 
 .fx--w-nw {
-  -webkit-flex-wrap: no-wrap;
   -ms-flex-wrap: no-wrap;
   flex-wrap: no-wrap; }
 
 .fx--w-w {
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
 .fx--w-wr {
-  -webkit-flex-wrap: wrap-reverse;
   -ms-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse; }
 
 .fx--w-ih {
-  -webkit-flex-wrap: inherit;
   -ms-flex-wrap: inherit;
   flex-wrap: inherit; }
 
 .fx--w-in {
-  -webkit-flex-wrap: initial;
   -ms-flex-wrap: initial;
   flex-wrap: initial; }
 
 .fx--w-nw-imp {
-  -webkit-flex-wrap: no-wrap !important;
   -ms-flex-wrap: no-wrap !important;
   flex-wrap: no-wrap !important; }
 
 .fx--w-w-imp {
-  -webkit-flex-wrap: wrap !important;
   -ms-flex-wrap: wrap !important;
   flex-wrap: wrap !important; }
 
 .fx--w-wr-imp {
-  -webkit-flex-wrap: wrap-reverse !important;
   -ms-flex-wrap: wrap-reverse !important;
   flex-wrap: wrap-reverse !important; }
 
 .fx--w-ih-imp {
-  -webkit-flex-wrap: inherit !important;
   -ms-flex-wrap: inherit !important;
   flex-wrap: inherit !important; }
 
 .fx--w-in-imp {
-  -webkit-flex-wrap: initial !important;
   -ms-flex-wrap: initial !important;
   flex-wrap: initial !important; }
 
 .fx--d-r {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row; }
 
 .fx--d-rr {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
 .fx--d-c {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
 
 .fx--d-cr {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-  -webkit-flex-direction: column-reverse;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse; }
 
 .fx--d-ih {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: inherit;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
   -ms-flex-direction: inherit;
   flex-direction: inherit; }
 
 .fx--d-in {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: initial;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
   -ms-flex-direction: initial;
   flex-direction: initial; }
 
 .fx--d-r-imp {
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: normal !important;
-  -webkit-flex-direction: row !important;
   -ms-flex-direction: row !important;
   flex-direction: row !important; }
 
 .fx--d-rr-imp {
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: reverse !important;
-  -webkit-flex-direction: row-reverse !important;
   -ms-flex-direction: row-reverse !important;
   flex-direction: row-reverse !important; }
 
 .fx--d-c-imp {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
-  -webkit-flex-direction: column !important;
   -ms-flex-direction: column !important;
   flex-direction: column !important; }
 
 .fx--d-cr-imp {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: reverse !important;
-  -webkit-flex-direction: column-reverse !important;
   -ms-flex-direction: column-reverse !important;
   flex-direction: column-reverse !important; }
 
 .fx--d-ih-imp {
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-  -webkit-flex-direction: inherit !important;
+  -webkit-box-orient: inherit !important;
+  -webkit-box-direction: inherit !important;
   -ms-flex-direction: inherit !important;
   flex-direction: inherit !important; }
 
 .fx--d-in-imp {
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-  -webkit-flex-direction: initial !important;
+  -webkit-box-orient: initial !important;
+  -webkit-box-direction: initial !important;
   -ms-flex-direction: initial !important;
   flex-direction: initial !important; }
 
 .fx--jc-fs {
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
 
 .fx--jc-fe {
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
 
 .fx--jc-c {
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
 
 .fx--jc-sa {
-  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
 
 .fx--jc-sb {
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
 .fx--jc-ih {
   -webkit-box-pack: inherit;
-  -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit; }
 
 .fx--jc-in {
   -webkit-box-pack: initial;
-  -webkit-justify-content: initial;
   -ms-flex-pack: initial;
   justify-content: initial; }
 
 .fx--jc-fs-imp {
   -webkit-box-pack: start !important;
-  -webkit-justify-content: flex-start !important;
   -ms-flex-pack: start !important;
   justify-content: flex-start !important; }
 
 .fx--jc-fe-imp {
   -webkit-box-pack: end !important;
-  -webkit-justify-content: flex-end !important;
   -ms-flex-pack: end !important;
   justify-content: flex-end !important; }
 
 .fx--jc-c-imp {
   -webkit-box-pack: center !important;
-  -webkit-justify-content: center !important;
   -ms-flex-pack: center !important;
   justify-content: center !important; }
 
 .fx--jc-sa-imp {
-  -webkit-justify-content: space-around !important;
   -ms-flex-pack: distribute !important;
   justify-content: space-around !important; }
 
 .fx--jc-sb-imp {
   -webkit-box-pack: justify !important;
-  -webkit-justify-content: space-between !important;
   -ms-flex-pack: justify !important;
   justify-content: space-between !important; }
 
 .fx--jc-ih-imp {
   -webkit-box-pack: inherit !important;
-  -webkit-justify-content: inherit !important;
   -ms-flex-pack: inherit !important;
   justify-content: inherit !important; }
 
 .fx--jc-in-imp {
   -webkit-box-pack: initial !important;
-  -webkit-justify-content: initial !important;
   -ms-flex-pack: initial !important;
   justify-content: initial !important; }
 
 .fx--ai-fs {
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start; }
 
 .fx--ai-fe {
   -webkit-box-align: end;
-  -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end; }
 
 .fx--ai-c {
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
 
 .fx--ai-b {
   -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
   -ms-flex-align: baseline;
   align-items: baseline; }
 
 .fx--ai-s {
   -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch; }
 
 .fx--ai-ih {
   -webkit-box-align: inherit;
-  -webkit-align-items: inherit;
   -ms-flex-align: inherit;
   align-items: inherit; }
 
 .fx--ai-in {
   -webkit-box-align: initial;
-  -webkit-align-items: initial;
   -ms-flex-align: initial;
   align-items: initial; }
 
 .fx--ai-fs-imp {
   -webkit-box-align: start !important;
-  -webkit-align-items: flex-start !important;
   -ms-flex-align: start !important;
   align-items: flex-start !important; }
 
 .fx--ai-fe-imp {
   -webkit-box-align: end !important;
-  -webkit-align-items: flex-end !important;
   -ms-flex-align: end !important;
   align-items: flex-end !important; }
 
 .fx--ai-c-imp {
   -webkit-box-align: center !important;
-  -webkit-align-items: center !important;
   -ms-flex-align: center !important;
   align-items: center !important; }
 
 .fx--ai-b-imp {
   -webkit-box-align: baseline !important;
-  -webkit-align-items: baseline !important;
   -ms-flex-align: baseline !important;
   align-items: baseline !important; }
 
 .fx--ai-s-imp {
   -webkit-box-align: stretch !important;
-  -webkit-align-items: stretch !important;
   -ms-flex-align: stretch !important;
   align-items: stretch !important; }
 
 .fx--ai-ih-imp {
   -webkit-box-align: inherit !important;
-  -webkit-align-items: inherit !important;
   -ms-flex-align: inherit !important;
   align-items: inherit !important; }
 
 .fx--ai-in-imp {
   -webkit-box-align: initial !important;
-  -webkit-align-items: initial !important;
   -ms-flex-align: initial !important;
   align-items: initial !important; }
 

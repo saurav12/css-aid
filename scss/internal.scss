@@ -173,6 +173,18 @@ code {
 		background-color: $theme-primary;
 		color: $theme-primary-bg;
 	}
+
+	// Bordered
+	&.bordered {
+		display: block;
+		font-size: 1.2rem;
+		padding: 0.5rem 1rem;
+		background-color: $theme-primary-bg;
+		color: $theme-primary;
+		white-space: pre;
+		overflow-x: auto;
+		border: 2px dashed $theme-primary;
+	}
 }
 
 
