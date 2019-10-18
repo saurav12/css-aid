@@ -1,0 +1,32 @@
+{
+  "name": "@saurav12/css-aid",
+  "version": "1.0.0",
+  "description": "Developers won't write the basic css properties again! https://saurav12.github.io/css-aid/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "_repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurav12/css-aid.git"
+  },
+  "repository": {
+    "url": "git://github.com/saurav12/css-aid.git"
+  },
+  "keywords": [
+    "css-aid",
+    "css",
+    "utility",
+    "grids",
+    "spacing",
+  ],
+  "author": "Saurav Rastogi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saurav12/css-aid/issues"
+  },
+  "homepage": "https://github.com/saurav12/css-aid#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
